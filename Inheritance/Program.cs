@@ -28,12 +28,39 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            Bird sam = new Bird()
+            {
+                numberOfEyes = 2,
+                numberOfLegs = 2,
+                type = "Toco",
+                color = "mostly black",
+                generalSpecies = "Toucan",
+                shortBeak = false,
+                canFly = true,
+                nocturnal = false
+            };
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            Reptile gary = new Reptile()
+            {
+                numberOfEyes = 2,
+                numberOfLegs = 0,
+                generalSpecies = "Snake",
+                color = "brown",
+                type = "Worm",
+                numberOfLungs = 1,
+                livesInWater = false,
+                laysEggs = true
+            };
+            Console.WriteLine();
+            sam.presentBird();
+            Console.WriteLine();
+            gary.presentReptile();
+            Console.WriteLine();
         }
     }
 }
